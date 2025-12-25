@@ -31,12 +31,22 @@ Dependencies are already installed in the venv. If you need to reinstall:
 ```powershell
 .\venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
-### 3. Add API key
-Go to https://newsdata.io/ and create an account and API key. Then, add it to your environment with the following:
-```python
-API_KEY = YOUR_API_KEY
+### 3. Configure API Key
+
+Create a `.env` file in the project root:
+
+```bash
+API_KEY=your_newsdata_io_api_key_here
 ```
-Replace "YOUR_API_KEY" with the actual key you get from the website. This script can always be adjusted for other APIs with minor tweaks.
+
+**Important:** The `.env` file is already in `.gitignore` and will not be committed to git.
+
+You can copy the example file:
+```powershell
+Copy-Item .env.example .env
+```
+
+Then edit `.env` and add your actual API key.
 ## Running the Pipeline
 
 ```powershell
