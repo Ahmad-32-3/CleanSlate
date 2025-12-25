@@ -1,9 +1,5 @@
 # CleanSlate
-A set of scripts to ingest, clean and embed data for semantic search, clustering et cetera. 
-
-# News Data Pipeline
-
-A data ingestion and representation pipeline that fetches news articles, cleans and normalizes them, and generates semantic embeddings.
+A data ingestion pipeline that fetches news articles, cleans and normalizes them, and generates semantic embeddings.
 
 ## Setup
 
